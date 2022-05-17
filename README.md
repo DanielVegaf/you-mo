@@ -4,7 +4,7 @@ Application where you can see a list of movies and description of them
 
 ## Number of commits
 
-### ``16/05/2022`
+### `16/05/2022`
 First commit, basic layout
 
 ## Availabe Script
