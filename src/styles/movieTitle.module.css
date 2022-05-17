@@ -1,0 +1,13 @@
+.movieTitle{
+    text-align: center;
+    font-size: 4rem;
+    color: #ecf0f1;
+}
+
+.movieTitle_span{
+    background-color: #8e44ad;
+    color: #ecf0f1;
+    border-radius: 5px;
+    padding: 0 7px;
+    margin: 0 3px;
+}
