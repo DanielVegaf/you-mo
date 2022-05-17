@@ -1,11 +1,14 @@
 # React App - YouMo - You movies app
 
-Application where you can see a list of movies and description of them
+Application where you can see a list of movies and description of them...
 
 ## Number of commits
 
 ### `16/05/2022`
-First commit, basic layout
+First commit, basic layout.
+
+### `17/05/2022`
+Second commit connection with API and integrate routes.
 
 ## Availabe Script
 
