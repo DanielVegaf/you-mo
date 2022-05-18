@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styles from '../styles/MovieDetails.module.css'
+import { Spinner } from "../components/Spinner";
 import { useParams } from 'react-router'
 import { useEffect, useState } from "react";
 import { get } from "../utils/httpClient";
@@ -7,12 +7,20 @@ import { get } from "../utils/httpClient";
 export function MovieDetails() {
     const { movieId } = useParams()
     const [movie, setMovie] = useState(null)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
+        setIsLoading(true)
+
         get("/movie/" + movieId).then((data) => {
+            setIsLoading(false)
             setMovie(data)
         })
     }, [movieId])
+
+    if(isLoading){
+        return <Spinner />
+    }
 
     if(!movie){
         return null
@@ -21,7 +29,6 @@ export function MovieDetails() {
     const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path
 
     return <div>
-        <Link to="/"> <div> Volver </div> </Link>
         <div className={styles.detailsContainer}>
             <img
                 className={`${styles.column} ${styles.movieImage}`}

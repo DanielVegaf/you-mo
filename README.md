@@ -10,6 +10,9 @@ First commit, basic layout.
 ### `17/05/2022`
 Second commit connection with API and integrate routes.
 
+### `18/05/2022`
+Added search bar and visual interface improvements to component style MovieDetails.js
+
 ## Availabe Script
 
 ### `npm start`

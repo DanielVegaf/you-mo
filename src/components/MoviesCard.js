@@ -14,7 +14,7 @@ export function MoviesCard({ movies }) {
                     width={230}
                     height={345}
                 />
-                <div>{movies.title}</div>
+                <div className={styles.movieTitle}>{movies.title}</div>
             </Link>
 
         </div>

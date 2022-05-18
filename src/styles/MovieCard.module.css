@@ -16,6 +16,10 @@
     background-color: azure;
 }
 
+.movieTitle{
+    padding: 0 5px;
+}
+
 @media (max-width: 580px) {
     .movieImage{
         width: 100%;

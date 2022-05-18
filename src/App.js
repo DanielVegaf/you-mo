@@ -2,6 +2,7 @@
 import styles from './styles/movieTitle.module.css'
 import {
   BrowserRouter as Router,
+  Link,
   Route,
   Routes
 } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
   return (
     <Router>
       <header>
+      <Link to="/">
         <h1
           className={styles.movieTitle}>
           You
@@ -20,6 +22,7 @@ function App() {
             Mo
           </span>
         </h1>
+      </Link>
       </header>
       <main>
         <Routes>
